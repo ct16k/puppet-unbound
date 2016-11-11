@@ -99,6 +99,7 @@ class unbound::params {
   }
 
   $access                     = ['::1','127.0.0.1/8']
+  $disable_dnssec             = false
   $auto_trust_anchor_file     = "${runtime_dir}/root.key"
   $anchor_fetch_command       = "unbound-anchor -a ${auto_trust_anchor_file}"
   $chroot                     = undef
